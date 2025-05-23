@@ -2,6 +2,7 @@ import { AuthProvider } from '@/context/authContext';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import FaviconSwitcher from '@/components/FaviconSwitcher';
 
 // Load Inter font with Latin subset
 const inter = Inter({ subsets: ['latin'] });
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={inter.className}>
         {/* Provide authentication context to the entire app */}
         <AuthProvider>
+          <FaviconSwitcher />
           {children}
         </AuthProvider>
       </body>
