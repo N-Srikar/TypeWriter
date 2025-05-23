@@ -59,6 +59,12 @@ export default function Home() {
           Test and improve your typing speed
         </p>
       </div>
+
+
+      <footer className="py-6 text-center text-sm text-muted-foreground">
+        {/* <p>Athena Library Management System</p> */}
+        <p>© Srikar Narsingoju</p>
+      </footer>
     </main>
   );
 }
